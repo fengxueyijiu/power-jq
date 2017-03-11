@@ -1,0 +1,62 @@
+.fault-list .app-content {
+  background-color: #f8f8f8;
+  padding-bottom: 60px;
+}
+.fault-list .new-fault-btn {
+  text-align: center;
+  z-index: 999;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  bottom: 72px;
+  right: 16px;
+  border-radius: 100%;
+  background-color: #FFC107;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+}
+.fault-list .new-fault-btn a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}
+.fault-list .fault-card {
+  margin-bottom: 8px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+.fault-list .fault-card:hover {
+  background-color: #CFD8DC;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.fault-list .fault-card a{
+  text-decoration: none;
+}
+.fault-card .number-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.fault-card .number {
+  color: #212121;
+  font-size: 16px;
+}
+.fault-card .status {
+  color: #212121;
+  font-size: 12px;
+  font-weight: 600;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 16px;
+  background-color: #db2828;
+  color: #fff;
+}
+.fault-card .desc {
+  color: #757575;
+  font-size: 14px;
+}

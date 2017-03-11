@@ -1,0 +1,52 @@
+.dark-primary-color    { background: #455A64; }
+.default-primary-color { background: #607D8B; }
+.light-primary-color   { background: #CFD8DC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FFC107; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  color: #727272;
+}
+
+.app-wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.app-header {
+  color: #fff;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.app-header .container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.app-header .container .title {
+  font-size: 20px;
+}
+.app-content {
+  flex-grow: 1;
+  line-height: 1.8;
+  padding: 16px;
+  overflow-y: scroll;
+}
+.app-footer {
+  height: 56px;
+  flex-shrink: 0;
+  display: flex;
+}
+@import './login.css';
+@import './fault-list.css';
+@import './fault-show.css';
+@import './fault-new.css';
+

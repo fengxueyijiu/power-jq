@@ -1,0 +1,71 @@
+.fault-new .app-content {
+  background-color: #f8f8f8;
+}
+.fault-new form .block {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.fault-new form .label {
+  padding-bottom: 8px;
+  color: #757575;
+  font-weight: 600;
+  font-size: 14px;
+}
+.fault-new form select {
+  border: 1px solid #BDBDBD;
+  height: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100px;
+  font-size: 14px;
+}
+.fault-new form select:focus {
+  outline: none;
+  border-color: #FFC107;
+  color: #212121;
+}
+.fault-new form input {
+  border: 1px solid #BDBDBD;
+  height: 30px;
+  font-size: 14px;
+  width: 100%;
+  padding: 0;
+  border-radius: 4px;
+}
+.fault-new form input:focus {
+  outline: none;
+  border-color: #FFC107;
+  color: #212121;
+}
+.fault-new form textarea {
+  border: 1px solid #BDBDBD;
+  height: 60px;
+  font-size: 14px;
+  width: 100%;
+  padding: 0;
+  border-radius: 4px;
+}
+.fault-new form textarea:focus {
+  outline: none;
+  border-color: #FFC107;
+  color: #212121;
+}
+.fault-new form .action {
+  margin-top: 30px;
+  text-align: center;
+}
+.fault-new form button {
+  text-align: center;
+  width: 50%;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  background-color: #FFC107;
+}
+.fault-new form button:focus {
+  outline: none;
+}

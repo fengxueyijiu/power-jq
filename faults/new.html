@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>new</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/fault-list.css">
+  <link rel="stylesheet" href="../css/fault-show.css">
+  <link rel="stylesheet" href="../css/fault-new.css">
+  <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+  <script src="../js/js.cookie.js"></script>
+  <script>
+    window.onload=function() {
+      document.getElementById('new-btn').onclick=function(){
+      uexCamera.open();
+     }
+    }
+  </script>
+</head>
+<body>
+  <div class='app-wrap fault-new'>
+    <div class='app-header default-primary-color'>
+      <div class='container'>
+        <div class='title'>发现缺陷</div>
+      </div>
+    </div>
+    <div class='app-content'>
+       <form>
+        <div class="block">
+          <div class="label">缺陷分类</div>
+          <select name="select">
+            <option value="value1">一类缺陷</option>
+            <option value="value2">二类缺陷</option>
+            <option value="value3">三类缺陷</option>
+            <option value="value3">其它类缺陷</option>
+          </select>
+        </div>
+        <div class="block">
+          <div class="label">发生时间</div>
+          <input />
+        </div>
+        <div class="block">
+          <div class="label">缺陷描述</div>
+          <textarea rows="8" cols="40"></textarea>
+        </div>
+
+        <input type="file" accept="image/*" />
+        <input id='new-btn' type="button" value="拍照"/>
+
+        <div class="action">
+          <button>提交</button>
+        </div>
+      </form>
+    </div>
+    <div class="app-footer default-primary-color">
+    </div>
+  </div>
+</body>
+</html>

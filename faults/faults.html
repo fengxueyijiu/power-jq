@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>缺陷列表</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/fault-list.css">
+  <link rel="stylesheet" href="../css/fault-show.css">
+  <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+  <script src="../js/js.cookie.js"></script>
+  <script>
+    $(document).ready(function(){
+      var user=$('#username').val();
+      var pass=$('#password').val();
+      var loginb=$('#login-btn');
+
+        $.get('http://ykkj.f3322.net:7132/ykds/FXYK/getQxList',function(res,state){
+          var data=JSON.parse(res);
+          var arr = data.data;
+          console.log(arr);
+          var list='';
+          for(var i=0;i<arr.length;i++){
+             console.log(arr[i].row_id);
+             list +="<div class='fault-card'>"+"<a>"+
+               "<div class='number-status'>"+
+                 "<div class='number'>"+"#"+arr[i].mmlnum+"</div>"+
+                " <div class='status' style={{backgroundColor: selectedArray[0].color}}>"+arr[i].mmlsta+"</div>"+
+               "</div>"+
+               "<div class='desc'>"+arr[i].mldtxtmld+"</div>"+
+             "</a>"+"</div>";
+          }
+          $('.app-content').html(list)
+        })
+
+     });
+  </script>
+</head>
+<body>
+  <div class='app-wrap fault-list'>
+    <div class='app-header default-primary-color'>
+      <div class='container'>
+        <div class='title'>缺陷列表</div>
+      </div>
+    </div>
+    <div class='app-content'>
+      <!-- <div class='fault-card' style={{borderLeft: `3px solid ${selectedArray[0].color}`}}>
+        <a to={`/faults/${fault.mmlid}`}>
+          <div class='number-status'>
+            <div class='number'></div>
+            <div class='status' style={{backgroundColor: selectedArray[0].color}}>{fault.mmlsta}</div>
+          </div>
+          <div class='desc'>{fault.mldtxtmld}</div>
+        </a>
+      </div> -->
+
+    </div>
+    <div class='new-fault-btn'><a href='./new.html'>+</a></div>
+    <div class="app-footer default-primary-color">
+    </div>
+  </div>
+</body>
+</html>

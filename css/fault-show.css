@@ -1,0 +1,48 @@
+.fault-show .app-content {
+  padding: 0;
+}
+.fault-show .tabs {
+  display: flex;
+  background-color: #CFD8DC;
+  width: 100%;
+}
+.fault-show .tabs .tab {
+  width: 50%;
+  text-align: center;
+  line-height: 1;
+  padding: 10px;
+}
+.fault-show .tabs .tab.active {
+  border-bottom: 3px solid #FFC107;
+  color: #212121;
+}
+.fault-show .content {
+  padding: 16px;
+}
+
+/* 缺陷详情 */
+
+.fault-show .tab-content {
+  font-size: 14px;
+  padding: 16px;
+}
+.fault-show .tab-content .category {
+  background-color: #CFD8DC;
+  text-align: center;
+  color: #212121;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: 16px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.fault-show .tab-content .item {
+  height: 40px;
+}
+.fault-show .tab-content .card {
+  margin-bottom: 8px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
